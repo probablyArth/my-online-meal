@@ -1,0 +1,223 @@
+/* CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    height: 141px;
+    width: 130px;
+    margin: 8px 26px;
+    display: flex;
+}
+
+#logo img{
+    height: inherit;
+    width: inherit;
+
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -4;
+    /* opacity: 0.3; */
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    font-weight: bolder;
+    color: #05396b;
+    display: block;
+    padding: 3px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: #05396b;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#home::before{
+    content: "";
+    background:
+      url('../assets/images/greenback.png') no-repeat center center/cover; 
+    position: absolute;
+    height: 544px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -2;
+    /* opacity: 0.8; */
+
+}
+
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding-top: 80px;
+    text-shadow: 4px 5px 4px #389583;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size:1.5rem ;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 2px 3px 4px #389583;   
+}
+
+
+/* Services Section */
+.services-container{
+    display: block;
+    background-color: #389583;
+    box-shadow: 0px -17px 1px #389583;
+}
+
+
+#services{
+    margin: 0px 30px;
+    display: flex;
+}
+
+.services-container h1{
+    text-shadow: 2px 3px 4px #05396b;
+}
+
+#services .box{
+    border: 2px solid rgb(141, 228, 175);
+    width: 100%;
+    padding: 8px 43px;
+    margin: 44px 27px;
+    border-radius: 15px;
+    background-color: rgb(141, 228, 175);
+    box-shadow: 22px 16px 10px #05396b;
+}
+
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(2px 3px 4px #05396b);
+}
+
+/* Clients section */
+#client-section{
+    /* height: 300px; */
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color: #8de4af;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 10px 74px;
+}
+
+#clients img{
+    height: 100px;
+    border-radius: 4px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #60C5AB;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 4.5rem;
+    padding: 12px;
+    font-weight: 5000;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: 2px solid #05396b;
+    border-radius: 5px;
+    color: white;
+    background: #05396b;
+    cursor: pointer;    
+    box-shadow: 2px 2px 2px #389583;
+}
+
+.center{
+    text-align: center;
+}
+
