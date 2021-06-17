@@ -14,7 +14,7 @@
 
 #home h1{
     padding-top: 0px;
-    
+
 }
 
 #home::before{
@@ -36,11 +36,3 @@
     width: fit-content;
 }
 
-/* Clients section */
-#clients{
-    /* overflow: ; */
-}
-
-/* Contact us */
-
-/* Navigation */
