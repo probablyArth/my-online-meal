@@ -1,0 +1,46 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+}
+/* Home section */
+#home{
+    height: 314px;
+    flex-direction: column;
+}
+
+#home h1{
+    padding-top: 0px;
+    
+}
+
+#home::before{
+    height: 600px;
+    z-index: -1;
+}
+
+
+/* Services section */
+#services{
+    flex-direction: column;
+}
+
+#services::before{
+    z-index: -2;
+}
+
+#services .box{
+    width: fit-content;
+}
+
+/* Clients section */
+#clients{
+    /* overflow: ; */
+}
+
+/* Contact us */
+
+/* Navigation */

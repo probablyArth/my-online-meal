@@ -1,0 +1,16 @@
+.h-primary{
+    font-size: 3rem;
+}
+
+#home{
+   
+}
+#home p{
+    font-size: 1rem;
+    overflow-wrap: break-word;
+}
+
+.btn{
+    /* padding-top: ; */
+    margin-top: 0px;
+}

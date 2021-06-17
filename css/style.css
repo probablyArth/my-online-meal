@@ -12,7 +12,10 @@
     top: 0px;
     width: 100%;
     align-items: center;
+    z-index: 1;
+    /* flex-direction: column; */
 }
+
 
 /* Navigation Bar: Logo and Image */
 #logo{
@@ -25,23 +28,26 @@
 #logo img{
     height: inherit;
     width: inherit;
+    z-index: 1;
 
 }
 
 /* Navigation Bar: List Styling */
 #navbar ul{
     display: flex;
+    z-index: 1;
 }
 
 #navbar::before{
     content: "";
-    background-color: black;
+    background-color: #00AE8C;
     position: absolute;
+    background-size: cover;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    z-index: -4;
+    z-index: 1;
     /* opacity: 0.3; */
 }
 
@@ -71,13 +77,13 @@
     padding: 2px 100px;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 388px;
 }
 
 #home::before{
     content: "";
     background:
-      url('../assets/images/greenback.png') no-repeat center center/cover; 
+      #8de4af; 
     position: absolute;
     height: 544px;
     top: 0px;
@@ -135,7 +141,7 @@
 }
 
 #services .box img{
-    height: 200px;
+    height: 10rem;
     display: block;
     margin: auto;
     filter: drop-shadow(2px 3px 4px #05396b);
@@ -187,7 +193,29 @@
     background-color: #60C5AB;
 }
 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box form{
+    font-size: 1.3rem;
+}
 
 footer{
     background-color: black;
